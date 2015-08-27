@@ -1,5 +1,5 @@
 var assert = require("power-assert");
-var appendIfNotExists = require("../append-if-not-exists");
+var appendIfNotExists = require("../appendIfNotExists");
 
 describe("appendIfNotExists(array: any[], target: any): boolean", function() {
   it("works", function() {
