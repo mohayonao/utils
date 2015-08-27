@@ -1,5 +1,5 @@
 var assert = require("power-assert");
-var removeIfExists = require("../remove-if-exists");
+var removeIfExists = require("../removeIfExists");
 
 describe("removeIfExists(array: any[], target: any): boolean", function() {
   it("works", function() {
