@@ -16,12 +16,21 @@ npm install @mohayonao/utils
 ## Examples
 
 ```js
+import { range, midicps, scramble } from "@mohayonao/utils";
+
+let melody = scramble(range(69, 82).map(midicps));
+```
+
+import individual functions for your needs
+
+```js
 import range from "@mohayonao/utils/range";
 import midicps from "@mohayonao/utils/midicps";
 import scramble from "@mohayonao/utils/scramble";
 
 let melody = scramble(range(69, 82).map(midicps));
 ```
+
 
 ## API
 
