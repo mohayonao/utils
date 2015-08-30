@@ -53,6 +53,8 @@ let melody = scramble(range(69, 82).map(midicps));
 - `linexp(value: number, inMin, inMax, outMin, outMax): number`
 - `linlin(value: number, inMin, inMax, outMin, outMax): number`
 - `midicps(midi: number): number`
+- `rand(value: number, rand=Math.random): number`
+- `rand2(value: number, rand=Math.random): number`
 - `truncate(x: number, y: number): number`
 
 ### Functions
