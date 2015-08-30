@@ -14,6 +14,8 @@ module.exports = {
   midicps: require("./midicps"),
   noop: require("./noop"),
   once: require("./once"),
+  rand: require("./rand"),
+  rand2: require("./rand2"),
   range: require("./range"),
   removeIfExists: require("./removeIfExists"),
   reverse: require("./reverse"),
