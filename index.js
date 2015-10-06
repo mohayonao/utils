@@ -11,6 +11,7 @@ module.exports = {
   foldAt: require("./foldAt"),
   linexp: require("./linexp"),
   linlin: require("./linlin"),
+  memo: require("./memo"),
   midicps: require("./midicps"),
   noop: require("./noop"),
   once: require("./once"),
