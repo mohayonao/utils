@@ -1,19 +1,17 @@
-var assert = require("power-assert");
-var memo = require("../memo");
+"use strict";
 
-describe("memo", function() {
-  it("works", function() {
-    memo.set("foo", 100);
+const assert = require("power-assert");
+const memo = require("../memo");
 
-    assert(memo.has("foo") === true);
-    assert(memo.has("bar") === false);
+memo.set("foo", 100);
 
-    assert(memo.get("foo") === 100);
-    assert(typeof memo.get("bar") === "undefined");
+assert(memo.has("foo") === true);
+assert(memo.has("bar") === false);
 
-    memo.set("bar", 200);
+assert(memo.get("foo") === 100);
+assert(typeof memo.get("bar") === "undefined");
 
-    assert(memo.has("bar") === true);
-    assert(memo.get("bar") === 200);
-  });
-});
+memo.set("bar", 200);
+
+assert(memo.has("bar") === true);
+assert(memo.get("bar") === 200);

@@ -9,5 +9,5 @@ module.exports = {
   },
   get: function(key) {
     return repository[key];
-  },
+  }
 };
