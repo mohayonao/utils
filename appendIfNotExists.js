@@ -1,4 +1,4 @@
-module.exports = function(array, target) {
+function appendIfNotExists(array, target) {
   var index = array.indexOf(target);
 
   if (index !== -1) {
@@ -8,4 +8,6 @@ module.exports = function(array, target) {
   array.push(target);
 
   return true;
-};
+}
+
+module.exports = appendIfNotExists;

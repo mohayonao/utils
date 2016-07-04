@@ -1,4 +1,4 @@
-module.exports = function(array, rand) {
+function scramble(array, rand) {
   var result = array.slice();
   var i, imax, j, tmp;
 
@@ -13,4 +13,6 @@ module.exports = function(array, rand) {
   }
 
   return result;
-};
+}
+
+module.exports = scramble;

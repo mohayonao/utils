@@ -1,4 +1,4 @@
-module.exports = function(array, target) {
+function removeIfExists(array, target) {
   var index = array.indexOf(target);
 
   if (index === -1) {
@@ -8,4 +8,6 @@ module.exports = function(array, target) {
   array.splice(index, 1);
 
   return true;
-};
+}
+
+module.exports = removeIfExists;
