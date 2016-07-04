@@ -10,8 +10,8 @@
   "devDependencies": {
     "babel-preset-power-assert": "^1.0.0",
     "babel-register": "^6.9.0",
+    "eater": "^3.0.0-5",
     "eslint": "^3.0.0",
-    "mocha": "^2.5.3",
     "npm-run-all": "^2.3.0",
     "nyc": "^6.6.1",
     "power-assert": "^1.4.1",
@@ -30,12 +30,12 @@
   },
   "scripts": {
     "clean": "rm -rf lib coverage .nyc_output npm-debug.log",
-    "cover": "nyc --report text --report html mocha",
+    "cover": "nyc --report text --report html eater",
     "lint": "eslint ./*.js test",
     "postversion": "git push && git push --tags && npm run clean",
     "prepublish": "npm-run-all clean lint test",
     "preversion": "npm-run-all clean lint test",
-    "test": "mocha --require babel-register",
+    "test": "eater --require babel-register",
     "travis": "npm run lint && npm run test"
   }
 }
