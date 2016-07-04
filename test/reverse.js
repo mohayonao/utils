@@ -1,12 +1,10 @@
-var assert = require("power-assert");
-var reverse = require("../reverse");
+"use strict";
 
-describe("reverse(array: any[]): any[]", function() {
-  it("works", function() {
-    var src = [ 1, 2, 3 ];
-    var dst = reverse(src);
+const assert = require("power-assert");
+const reverse = require("../reverse");
 
-    assert.deepEqual(src, [ 1, 2, 3 ]);
-    assert.deepEqual(dst, [ 3, 2, 1 ]);
-  });
-});
+const src = [ 1, 2, 3 ];
+const dst = reverse(src);
+
+assert.deepEqual(src, [ 1, 2, 3 ]);
+assert.deepEqual(dst, [ 3, 2, 1 ]);

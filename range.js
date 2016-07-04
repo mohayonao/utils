@@ -1,4 +1,4 @@
-module.exports = function(start, stop, step) {
+function range(start, stop, step) {
   var length, result;
   var i;
 
@@ -17,4 +17,6 @@ module.exports = function(start, stop, step) {
   }
 
   return result;
-};
+}
+
+module.exports = range;

@@ -1,4 +1,4 @@
-module.exports = function(func) {
+function once(func) {
   var done = false;
   var result;
 
@@ -9,4 +9,6 @@ module.exports = function(func) {
     }
     return result;
   };
-};
+}
+
+module.exports = once;

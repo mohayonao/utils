@@ -1,3 +1,5 @@
-module.exports = function(db) {
+function dbamp(db) {
   return Math.pow(10, db * 0.05);
-};
+}
+
+module.exports = dbamp;

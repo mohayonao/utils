@@ -1,4 +1,4 @@
-module.exports = function(func, wait) {
+function debounce(func, wait) {
   var timerId = 0;
 
   return function() {
@@ -13,4 +13,6 @@ module.exports = function(func, wait) {
       timerId = 0;
     }, wait);
   };
-};
+}
+
+module.exports = debounce;

@@ -1,14 +1,6 @@
-var assert = require("power-assert");
-var noop = require("../noop");
-var inIstanbul = Object.keys(global).some(function(x) { return /^\$\$cov_/.test(x); });
+"use strict";
 
-describe("noop(): void", function() {
-  it("works", function() {
-    var functionBody = noop.toString().replace(/\s/g, "");
+const assert = require("power-assert");
+const noop = require("../noop");
 
-    if (!inIstanbul) {
-      assert(functionBody === "function(){}");
-    }
-    assert.doesNotThrow(noop);
-  });
-});
+assert.doesNotThrow(noop);

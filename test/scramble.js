@@ -1,8 +1,10 @@
-var assert = require("power-assert");
-var scramble = require("../scramble");
+"use strict";
+
+const assert = require("power-assert");
+const scramble = require("../scramble");
 
 function randgen() {
-  var SEED = [
+  const SEED = [
     0.21565761626698077,
     0.2639421643689275,
     0.7402096134610474,
@@ -14,21 +16,17 @@ function randgen() {
     0.3726505911909044,
     0.978148631984368,
   ];
-  var i = 0;
+  let i = 0;
 
   return function() {
     return SEED[i++ % SEED.length];
   };
 }
 
-describe("scramble(array: any[], rand = Math.random): any[]", function() {
-  it("works", function() {
-    var array = [ 1, 2, 3, 4, 5 ];
-    var rand = randgen();
+const array = [ 1, 2, 3, 4, 5 ];
+const rand = randgen();
 
-    assert(scramble(array) !== scramble(array));
-    assert.deepEqual(scramble(array, rand), [ 2, 3, 4, 5, 1 ]);
-    assert.deepEqual(scramble(array, rand), [ 1, 4, 2, 3, 5 ]);
-    assert.deepEqual(array, [ 1, 2, 3, 4, 5 ]);
-  });
-});
+assert(scramble(array) !== scramble(array));
+assert.deepEqual(scramble(array, rand), [ 2, 3, 4, 5, 1 ]);
+assert.deepEqual(scramble(array, rand), [ 1, 4, 2, 3, 5 ]);
+assert.deepEqual(array, [ 1, 2, 3, 4, 5 ]);

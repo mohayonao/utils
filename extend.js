@@ -1,4 +1,4 @@
-module.exports = function() {
+function extend() {
   var result = {};
   var args = Array.prototype.slice.call(arguments, 0);
   var keys, i, imax, j, jmax;
@@ -12,4 +12,6 @@ module.exports = function() {
   }
 
   return result;
-};
+}
+
+module.exports = extend;

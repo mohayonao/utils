@@ -1,4 +1,4 @@
-module.exports = function(array, index) {
+function foldAt(array, index) {
   var len1 = array.length;
   var len2 = len1 * 2 - 2;
 
@@ -14,4 +14,6 @@ module.exports = function(array, index) {
   }
 
   return array[index];
-};
+}
+
+module.exports = foldAt;

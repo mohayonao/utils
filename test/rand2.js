@@ -1,8 +1,10 @@
-var assert = require("power-assert");
-var rand2 = require("../rand2");
+"use strict";
+
+const assert = require("power-assert");
+const rand2 = require("../rand2");
 
 function randgen() {
-  var SEED = [
+  const SEED = [
     0.21565761626698077,
     0.2639421643689275,
     0.7402096134610474,
@@ -14,20 +16,16 @@ function randgen() {
     0.3726505911909044,
     0.978148631984368,
   ];
-  var i = 0;
+  let i = 0;
 
   return function() {
     return SEED[i++ % SEED.length];
   };
 }
 
-describe("rand2(value: number, rand = Math.random): number", function() {
-  it("works", function() {
-    var random = randgen();
+const random = randgen();
 
-    assert(rand2(0) === 0);
-    assert(rand2(1, random) === -0.5686847674660385);
-    assert(rand2(+10, random) === -4.72115671262145);
-    assert(rand2(-10, random) === -4.804192269220948);
-  });
-});
+assert(rand2(0) === 0);
+assert(rand2(1, random) === -0.5686847674660385);
+assert(rand2(+10, random) === -4.72115671262145);
+assert(rand2(-10, random) === -4.804192269220948);

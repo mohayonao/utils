@@ -1,4 +1,4 @@
-module.exports = function(func, wait) {
+function throttle(func, wait) {
   var prevExecuteTime = 0;
 
   return function() {
@@ -9,4 +9,6 @@ module.exports = function(func, wait) {
       prevExecuteTime = currentTime;
     }
   };
-};
+}
+
+module.exports = throttle;

@@ -1,4 +1,4 @@
-module.exports = function(array, index) {
+function wrapAt(array, index) {
   index = (index|0) % array.length;
 
   if (index < 0) {
@@ -6,4 +6,6 @@ module.exports = function(array, index) {
   }
 
   return array[index];
-};
+}
+
+module.exports = wrapAt;
