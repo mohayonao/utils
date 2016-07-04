@@ -5,7 +5,6 @@ module.exports = {
   constrain: require("./constrain"),
   cpsmidi: require("./cpsmidi"),
   dbamp: require("./dbamp"),
-  debounce: require("./debounce"),
   defaults: require("./defaults"),
   extend: require("./extend"),
   foldAt: require("./foldAt"),
@@ -14,7 +13,6 @@ module.exports = {
   memo: require("./memo"),
   midicps: require("./midicps"),
   noop: require("./noop"),
-  once: require("./once"),
   rand: require("./rand"),
   rand2: require("./rand2"),
   range: require("./range"),
@@ -22,7 +20,6 @@ module.exports = {
   reverse: require("./reverse"),
   sample: require("./sample"),
   scramble: require("./scramble"),
-  throttle: require("./throttle"),
   truncate: require("./truncate"),
   wrapAt: require("./wrapAt"),
 };
