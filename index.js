@@ -12,6 +12,7 @@ module.exports = {
   midicps: require("./midicps"),
   rand: require("./rand"),
   rand2: require("./rand2"),
+  rateAt: require("./rateAt"),
   removeIfExists: require("./removeIfExists"),
   sample: require("./sample"),
   scramble: require("./scramble"),
