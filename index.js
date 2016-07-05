@@ -6,6 +6,7 @@ module.exports = {
   cpsmidi: require("./cpsmidi"),
   dbamp: require("./dbamp"),
   defaults: require("./defaults"),
+  dot: require("./dot"),
   foldAt: require("./foldAt"),
   linexp: require("./linexp"),
   linlin: require("./linlin"),
