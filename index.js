@@ -1,6 +1,7 @@
 module.exports = {
   appendIfNotExists: require("./appendIfNotExists"),
   blendAt: require("./blendAt"),
+  bpmsec: require("./bpmsec"),
   clamp: require("./clamp"),
   clipAt: require("./clipAt"),
   cpsmidi: require("./cpsmidi"),
