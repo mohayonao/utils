@@ -18,6 +18,7 @@ module.exports = {
   removeIfExists: require("./removeIfExists"),
   sample: require("./sample"),
   scramble: require("./scramble"),
+  secbpm: require("./secbpm"),
   truncate: require("./truncate"),
   wrapAt: require("./wrapAt"),
 };
