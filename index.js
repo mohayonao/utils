@@ -19,6 +19,7 @@ module.exports = {
   sample: require("./sample"),
   scramble: require("./scramble"),
   secbpm: require("./secbpm"),
+  sigmoid: require("./sigmoid"),
   truncate: require("./truncate"),
   wrapAt: require("./wrapAt"),
 };
