@@ -1,3 +1,10 @@
+"use strict";
+
+/**
+ * @param  {any[]}  array
+ * @param  {number} index
+ * @return {any}
+ */
 function foldAt(array, index) {
   var len1 = array.length;
   var len2 = len1 * 2 - 2;

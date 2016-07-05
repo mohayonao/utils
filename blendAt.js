@@ -1,5 +1,13 @@
+"use strict";
+
 var clipAt = require("./clipAt");
 
+/**
+ * @param  {any[]}    array
+ * @param  {number}   index
+ * @param  {function} [method]
+ * @return {any}
+ */
 function blendAt(array, index, method) {
   var x0, x1;
 

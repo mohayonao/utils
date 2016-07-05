@@ -1,3 +1,10 @@
+"use strict";
+
+/**
+ * @param  {any[]}    array
+ * @param  {function} [rand]
+ * @return {any[]}
+ */
 function scramble(array, rand) {
   var result = array.slice();
   var i, imax, j, tmp;
